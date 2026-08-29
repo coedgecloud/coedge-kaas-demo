@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: demo-app
-  namespace: customer-72081
+  namespace: customer-52410
   labels:
     app: demo-app
 spec:
