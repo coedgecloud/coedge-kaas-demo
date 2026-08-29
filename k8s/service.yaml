@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: demo-app-svc
-  namespace: customer-72081
+  namespace: customer-52410
   labels:
     app: demo-app
 spec:
