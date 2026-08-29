@@ -8,18 +8,18 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: demo-app
-  minReplicas: 2
-  maxReplicas: 10
+  minReplicas: 1
+  maxReplicas: 5
   metrics:
   - type: Resource
     resource:
       name: cpu
       target:
         type: Utilization
-        averageUtilization: 30   # Low threshold so HPA triggers easily in testing
+        averageUtilization: 1   # Low threshold so HPA triggers easily in testing
   behavior:
     scaleUp:
-      stabilizationWindowSeconds: 30   # Scale up fast for testing
+      stabilizationWindowSeconds: 10   # Scale up fast for testing
       policies:
       - type: Pods
         value: 2
