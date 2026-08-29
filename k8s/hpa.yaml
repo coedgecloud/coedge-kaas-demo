@@ -2,7 +2,7 @@ apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: demo-app-hpa
-  namespace: customer-72081
+  namespace: customer-52410
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
